@@ -1,0 +1,78 @@
+main {
+  padding: 50px 0;
+}
+.container {
+  margin: auto;
+  width: 60%;
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid rgb(0, 166, 255);
+  padding: 12px;
+}
+.addEl {
+  display: flex;
+  gap: 15px;
+}
+.addEl input {
+  width: 80%;
+  padding: 5px;
+  height: 30px;
+  border-color: rgb(0, 166, 255);
+  outline: none;
+  color: rgb(0, 166, 255);
+  font-weight: 600;
+}
+.addEl button {
+  width: 18%;
+  background-color: rgb(0, 166, 255);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.elements {
+  width: 100%;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+.elements .element {
+  padding: 5px;
+  border-radius: 10px;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 166, 255);
+  margin: 3px;
+}
+.element p {
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.element button {
+  width: 5%;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+i {
+  color: rgb(69, 131, 110);
+}
