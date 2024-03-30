@@ -1,6 +1,18 @@
 main {
   padding: 50px 0;
 }
+.title {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(0, 166, 255);
+  font-size: 40px;
+}
+.title h1 i {
+  background-color: rgb(0, 166, 255);
+  padding: 20px;
+  border-radius: 50%;
+  color: white;
+}
 .container {
   margin: auto;
   width: 60%;
@@ -21,6 +33,7 @@ main {
   outline: none;
   color: rgb(0, 166, 255);
   font-weight: 600;
+  border-radius: 10px;
 }
 .addEl button {
   width: 18%;
@@ -29,11 +42,15 @@ main {
   outline: none;
   border: none;
   cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 .elements {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 5px;
 }
 
@@ -57,7 +74,7 @@ main {
   display: flex;
   justify-content: space-between;
   background-color: rgb(0, 166, 255);
-  margin: 3px;
+  margin: 5px;
 }
 .element p {
   width: 90%;
