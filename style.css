@@ -82,6 +82,7 @@ main {
   color: white;
   margin-left: 5px;
   font-size: 18px;
+  outline: none;
 }
 .element button {
   width: 5%;
@@ -92,4 +93,23 @@ main {
 }
 i {
   color: rgb(69, 131, 110);
+}
+
+@media only screen and (max-width: 768px) {
+  .title h1 {
+    font-size: 40px;
+  }
+  .container {
+    width: 90%;
+  }
+  .element {
+    width: 96% !important;
+    margin-left: 0px !important;
+  }
+  .element p {
+    width: 70%;
+  }
+  .element button {
+    width: 15%;
+  }
 }
