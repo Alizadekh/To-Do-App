@@ -1,21 +1,32 @@
 let inputVal = document.querySelector(".addEl input");
 let addBtn = document.querySelector(".addEl button");
 let elements = document.querySelector(".elements");
+let alert = document.querySelector("#alert");
 let arr = [];
 
 function addElements() {
   let value = inputVal.value;
-  arr.push(value);
-  renderElements();
-  inputVal.value = "";
+  if (value.length == 0) {
+    alert.textContent = "Please fill the input area!";
+  } else {
+    arr.push(value);
+    renderElements();
+    inputVal.value = "";
+    alert.textContent = "";
+  }
 }
 
 function addElementsKey(e) {
   if (e.key === "Enter") {
     let value = inputVal.value;
-    arr.push(value);
-    renderElements();
-    inputVal.value = "";
+    if (value.length == 0) {
+      alert.textContent = "Please fill the input area!";
+    } else {
+      arr.push(value);
+      renderElements();
+      inputVal.value = "";
+      alert.textContent = "";
+    }
   }
 }
 
